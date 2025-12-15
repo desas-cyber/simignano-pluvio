@@ -1,0 +1,37 @@
+# .github/workflows/scrape-simignano.yml
+# Questo file va messo nel repository GitHub
+
+name: Scrape Simignano Data
+
+on:
+  schedule:
+    # Ogni 15 minuti
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # Permette esecuzione manuale
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install puppeteer
+      
+    - name: Run scraper
+      run: node scraper.js
+      
+    - name: Commit and push data
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add dati_simignano.json
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update data $(date +'%Y-%m-%d %H:%M:%S')"
+        git push
