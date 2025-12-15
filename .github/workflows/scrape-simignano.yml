@@ -6,7 +6,7 @@ name: Scrape Simignano Data
 on:
   schedule:
     # Ogni 15 minuti
-    - cron: '40 * * * *'
+    - cron: '5,35 * * * *'
   workflow_dispatch: # Permette esecuzione manuale
 
 jobs:
