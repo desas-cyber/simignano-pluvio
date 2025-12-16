@@ -38,10 +38,10 @@ const fs = require('fs');
             if (testo.includes('simignano')) {
                 risultati.push({
                     nome_stazione: raw[1] || '',
-                    precipitazioni_1h: raw[5] || '',
-                    precipitazioni_6h: raw[6] || '',
-                    precipitazioni_12h: raw[7] || '',
-                    precipitazioni_24h: raw[8] || '',
+                    precipitazioni_1h: raw[6] || '',
+                    precipitazioni_6h: raw[7] || '',
+                    precipitazioni_12h: raw[8] || '',
+                    precipitazioni_24h: raw[9] || '',
                     ultimi_dati: raw[12] || ''
                 });
             }
