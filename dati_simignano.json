@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-01-23T14:47:49.729Z",
-  "data_aggiornamento": "23/01 15.30",
+  "timestamp": "2026-01-23T15:13:05.512Z",
+  "data_aggiornamento": "23/01 16.00",
   "dati": [
     {
       "nome_stazione": "Simignano (RADIO)",
-      "precipitazioni_1h": "0.0",
-      "precipitazioni_3h": "0.0",
-      "precipitazioni_6h": "0.0",
-      "precipitazioni_12h": "0.0",
-      "precipitazioni_24h": "0.0",
-      "ultimi_dati": "23/01 15.30"
+      "precipitazioni_1h": "0.2",
+      "precipitazioni_3h": "0.2",
+      "precipitazioni_6h": "0.2",
+      "precipitazioni_12h": "0.2",
+      "precipitazioni_24h": "0.2",
+      "ultimi_dati": "23/01 16.00"
     }
   ]
 }
