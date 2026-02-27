@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-27T18:23:08.491Z",
-  "data_aggiornamento": "27/02 19.00",
+  "timestamp": "2026-02-27T19:23:54.841Z",
+  "data_aggiornamento": "27/02 20.00",
   "dati": [
     {
       "nome_stazione": "Simignano (RADIO)",
@@ -9,7 +9,7 @@
       "precipitazioni_6h": "0.0",
       "precipitazioni_12h": "0.2",
       "precipitazioni_24h": "0.4",
-      "ultimi_dati": "27/02 19.00"
+      "ultimi_dati": "27/02 20.00"
     }
   ]
 }
